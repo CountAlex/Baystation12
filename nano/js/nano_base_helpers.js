@@ -198,7 +198,19 @@ NanoBaseHelpers = function ()
                 html += '</div>';
 
 				return html;
-			}
+			},
+			
+			alienMode: function() {//this is for Horizon's Edge
+				$('#uiTitleWrapper').css("display", "none")
+				$('body').css("background-image","url('uiBackground-Alien.png')");
+				return '';
+			},
+			alienGlyphButton: function(icon, parameters) {//for alien glyph buttons //class="linkActive hasIcon link"
+				return '<div unselectable="on" class="linkActive alienGlyphButton" data-href="' + NanoUtility.generateHref(parameters) + '"><div class="uiIcon32AlienGlyph icon-ag-' + icon + '"></div></div>';
+			},
+			alienGlyphImage: function(icon) {//for alien glyph buttons //class="linkActive hasIcon link"
+				return '<div unselectable="on" class="alienGlyphImage"><div class="uiIcon32AlienGlyph icon-ag-' + icon + '"></div></div>';
+			},
 		};
 		
 	return {
@@ -218,10 +230,3 @@ NanoBaseHelpers = function ()
         }
 	};
 } ();
- 
-
-
-
-
-
-

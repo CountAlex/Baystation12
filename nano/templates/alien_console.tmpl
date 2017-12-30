@@ -1,0 +1,58 @@
+{{:helper.alienMode()}}
+<div style = "border: 3px violet solid; border-radius: 10px; max-width: 370px; min-width:375px">
+	{{if data.console_type == "Latin"}} <!-- Latin letters hint display-->
+		<div style="margin-left:auto; margin-right: auto; font: 14pt; text-align: center;">{{:data.hint_text}}</div>
+	{{/if}}
+	{{if data.console_type == "Glyph"}}<!--Glyphs hint display-->
+		
+			{{for data.hint_glyphs}}
+				{{:helper.alienGlyphImage(value)}}
+			{{/for}}
+
+	{{/if}}
+	{{if data.console_type == "Sphynx"}}<!--Glyphs question display-->
+			{{for data.question_glyphs}}
+				{{:helper.alienGlyphImage(value)}}
+			{{/for}}
+			<br>
+			<hr>
+			<div style="min-height: 40px;">
+			{{for data.player_input}}
+				{{:helper.alienGlyphImage(value)}}
+			{{/for}}
+			{{if data.solved == 0}}
+				<div class="animated">{{:helper.alienGlyphImage("blank")}}</div>
+				</div>
+				<br>
+				<hr>
+				{{for data.icon_links :icon:index}}
+					{{:helper.alienGlyphButton(index+1, {"letter" : index+1})}} 
+				{{/for}}
+				{{:helper.alienGlyphButton("wipe", {"wipe" : 1})}} 
+				{{:helper.alienGlyphButton("enter", {"enter" : 1})}} 
+			{{else}}
+				</div>
+			{{/if}}
+	{{/if}}
+	{{if data.console_type == "Lines"}}<!--Lines puzzle control-->
+		{{for data.states :row:row_index}}
+			<div style = "margin-left: auto; margin-right: auto; width: 300px; text-align: center;">
+			{{for row.columns :col:col_index}}
+				{{if col.state == 1}}
+					{{if data.solved == 1}}
+						{{:helper.alienGlyphImage("green-line")}} 
+					{{else}}
+						{{:helper.alienGlyphButton("green-line", {"action": 2, "row" : row_index, "column" : col_index})}} 
+					{{/if}}
+				{{else}}
+					{{if data.solved == 1}}
+						{{:helper.alienGlyphImage("green-line")}} 
+					{{else}}
+						{{:helper.alienGlyphButton("red-line", {"action": 2, "row" : row_index, "column" : col_index})}} 
+					{{/if}}
+				{{/if}}
+			{{/for}}
+			</div>
+		{{/for}}
+	{{/if}}
+</div>

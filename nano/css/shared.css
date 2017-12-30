@@ -701,3 +701,43 @@ th.bot {
 .candystripe:nth-child(odd) {
 	background-color: rgba(0, 0, 0, 0.16);
 }
+
+.alienGlyphButton
+{
+	min-height: 32px;
+	min-width: 32px;
+	padding: 1px;
+	margin: 2px;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: inline-block;
+	background-color: #9359c9;
+}
+
+.alienGlyphButton:hover
+{
+	border: 2px solid white;
+	transition: 1s;
+	border-radius: 0;
+	background-color: #7274f7;
+}
+
+@keyframes flickerAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animated{
+    opacity:1;  
+    animation: flickerAnimation 1s infinite;
+	display: inline-block;
+}
+
+.alienGlyphImage
+{
+	padding: 2px;
+	display: inline-block;
+	border-radius: 7px;
+	background-color: #00a1d6;
+	margin: 2px;
+}

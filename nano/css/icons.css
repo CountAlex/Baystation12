@@ -314,3 +314,43 @@
     background-position: -112px -128px;
 }
 
+.uiIcon32AlienGlyph
+{
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 2px;
+	background-image: url(uiIcons32AlienGlyphs.png);
+}
+.uiIcon32AlienGlyph.icon-ag-blank{ background-position: 32px 32px; }
+.uiIcon32AlienGlyph.icon-ag-1{ background-position: 0 0; }
+.uiIcon32AlienGlyph.icon-ag-2{ background-position: -32px 0; }
+.uiIcon32AlienGlyph.icon-ag-3{ background-position: -64px 0; }
+.uiIcon32AlienGlyph.icon-ag-4{ background-position: -96px 0; }
+.uiIcon32AlienGlyph.icon-ag-5{ background-position: -128px 0; }
+.uiIcon32AlienGlyph.icon-ag-6{ background-position: -160px 0; }
+.uiIcon32AlienGlyph.icon-ag-7{ background-position: -192px 0; }
+.uiIcon32AlienGlyph.icon-ag-8{ background-position: -224px 0; }
+.uiIcon32AlienGlyph.icon-ag-9{ background-position: 0 -32px; }
+.uiIcon32AlienGlyph.icon-ag-10{ background-position: -32px -32px; }
+.uiIcon32AlienGlyph.icon-ag-11{ background-position: -64px -32px; }
+.uiIcon32AlienGlyph.icon-ag-12{ background-position: -96px -32px; }
+.uiIcon32AlienGlyph.icon-ag-13{ background-position: -128px -32px; }
+.uiIcon32AlienGlyph.icon-ag-14{ background-position: -160px -32px; }
+.uiIcon32AlienGlyph.icon-ag-15{ background-position: -192px -32px; }
+.uiIcon32AlienGlyph.icon-ag-16{ background-position: -224px -32px; }
+.uiIcon32AlienGlyph.icon-ag-17{ background-position: 0 -64px; }
+.uiIcon32AlienGlyph.icon-ag-18{ background-position: -32px -64px; }
+.uiIcon32AlienGlyph.icon-ag-19{ background-position: -64px -64px; }
+.uiIcon32AlienGlyph.icon-ag-20{ background-position: -96px -64px; }
+.uiIcon32AlienGlyph.icon-ag-21{ background-position: -128px -64px; }
+.uiIcon32AlienGlyph.icon-ag-22{ background-position: -160px -64px; }
+.uiIcon32AlienGlyph.icon-ag-23{ background-position: -192px -64px; }
+.uiIcon32AlienGlyph.icon-ag-24{ background-position: -224px -64px; }
+.uiIcon32AlienGlyph.icon-ag-25{ background-position: 0 -96px; }
+.uiIcon32AlienGlyph.icon-ag-26{ background-position: -32px -96px; }
+.uiIcon32AlienGlyph.icon-ag-green-line{ background-position: -0 -128px; }
+.uiIcon32AlienGlyph.icon-ag-red-line{ background-position: -32px -128px; }
+.uiIcon32AlienGlyph.icon-ag-wipe{ background-position: -64px -128px; }
+.uiIcon32AlienGlyph.icon-ag-enter{ background-position: -96px -128px; }
+.uiIcon32AlienGlyph.icon-ag-error{ background-position: -64px -128px;  }
