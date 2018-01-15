@@ -87,6 +87,7 @@
 	#include "../away/hydro/hydro.dm"
 	#include "../away/mobius_rift/mobius_rift.dm"
 	#include "../away/icarus/icarus.dm"
+	#include "../away/white_trap/white_trap.dm"
 
 	#include "../../code/modules/lobby_music/chasing_time.dm"
 	#include "../../code/modules/lobby_music/human.dm"

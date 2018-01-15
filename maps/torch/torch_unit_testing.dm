@@ -69,6 +69,14 @@
 		/area/mobius_rift = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/icarus/vessel = NO_APC,
 		/area/icarus/open = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/white_trap/outside = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/white_trap/upper_building = NO_SCRUBBER|NO_VENT,
+		/area/white_trap/platform = NO_SCRUBBER|NO_VENT,
+		/area/white_trap/living = NO_SCRUBBER|NO_VENT,
+		/area/white_trap/engineering = NO_SCRUBBER|NO_VENT,
+		/area/white_trap/mining = NO_SCRUBBER|NO_VENT,
+		/area/white_trap/tunnels = NO_SCRUBBER|NO_VENT,
+		/area/white_trap/safe_room = NO_SCRUBBER|NO_VENT,
 	)
 
 	area_coherency_test_exempt_areas = list(
@@ -85,6 +93,7 @@
 		/area/marooned/marooned_snow,
 		/area/icarus/vessel,
 		/area/icarus/open,
+		/area/white_trap/outside,
 	)
 
 	area_coherency_test_subarea_count = list()
@@ -135,6 +144,7 @@
 		/area/bluespaceriver,
 		/area/mobius_rift,
 		/area/icarus,
+		/area/white_trap,
 	)
 
 /datum/unit_test/zas_area_test/ai_chamber
